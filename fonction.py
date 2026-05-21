@@ -22,9 +22,9 @@ def client_port(storage_client):
             print ("le port du client ... est: " + str(storage_client))
 
 
-client_port(0)
+#client_port(0)
 
-print (port_client_libre)
+#print (port_client_libre)
 
 
 
@@ -43,9 +43,9 @@ def serveur_port(storage_serveur):
         print ("le port du serveur ... est: "+ str (storage_serveur))
 
 
-serveur_port(0)
+#serveur_port(0)
 
-print(port_serveur_libre)
+#print(port_serveur_libre)
 
 
 
@@ -65,8 +65,9 @@ def config():
 
             list_parc.append(element_cut)
 
+    return (list_parc)
 
 
-config()
+#config()
 
-print (list_parc)
+#print (list_parc)
