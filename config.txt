@@ -1,0 +1,3 @@
+serveur.s1.name.1000
+client.c1.name.500
+client.c2.name.700
