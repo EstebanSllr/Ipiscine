@@ -1,38 +1,44 @@
 [
     {
-        "type":"serveur",
-        "name":"medicale",
-        "price":"10000",
-        "port":"none"
+        "type": "serveur",
+        "name": "medicale",
+        "price": "10000",
+        "port": 1
     },
     {
-        "type":"client",
-        "name":"c1",
-        "price":"1000",
-        "port":"none"
+        "type": "client",
+        "name": "c1",
+        "price": "1000",
+        "port": 15
     },
     {
-        "type":"client",
-        "name":"c2",
-        "price":"2000",
-        "port":"none"
+        "type": "client",
+        "name": "c2",
+        "price": "2000",
+        "port": 11
     },
     {
-        "type":"serveur",
-        "name":"astro",
-        "price":"10000",
-        "port":"none"
+        "type": "serveur",
+        "name": "astro",
+        "price": "10000",
+        "port": 3
     },
     {
-        "type":"client",
-        "name":"c3",
-        "price":"2000",
-        "port":"none"
+        "type": "client",
+        "name": "c3",
+        "price": "2000",
+        "port": 4
     },
     {
-        "type":"client",
-        "name":"c4",
-        "price":"2000",
-        "port":"none"
+        "type": "client",
+        "name": "c4",
+        "price": "2000",
+        "port": 12
+    },
+    {
+        "type": "serveur",
+        "name": "math",
+        "price": "10000",
+        "port": 2
     }
 ]
