@@ -1,14 +1,27 @@
-from fonction import serveur_port,client_port,config
+import json
+import classe
+from serveur import serveur_port
+from client import client_port
 
-port_client_libre = list(range(1,17))
-port_serveur_libre = list (range(1,4))
 
-list_parc = config()
+with open("config.json","r") as open_folder:
+    list_parck = json.load(open_folder)
 
-serveur_verif = ["serveur","SERVEUR","Serveur"]
+for i in list_parck:
 
-if list_parc[0][0] in serveur_verif:
+    if i["type"] == "serveur":
 
-    port_serveur = serveur_port(port_serveur_libre)
+        serveur_objet = classe.serveur(i["type"],i["name"],i["price"],i["port"])
 
-    print(port_serveur)
+        serveur_objet.port = serveur_port()
+
+        print(serveur_objet.name)
+       
+    
+    if i["type"] == "client":
+
+        client_objet = classe.client(i["type"],i["name"],i["price"],i["port"])
+
+        client_objet.port = client_port()
+        
+        print("client: " + str(client_objet.name) +" port: " +str(client_objet.port))
