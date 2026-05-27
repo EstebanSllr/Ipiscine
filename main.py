@@ -4,7 +4,7 @@ from serveur import serveur_port
 from client import client_port
 import calculat
 from open_config import json_import
-import result  # <--- AJOUTE ÇA EN HAUT !
+import result  
 
 instances = []
 list_parck = json_import()
@@ -24,9 +24,8 @@ for i in list_parck:
         print("client: " + str(client_objet.name) +"  | port: " +str(client_objet.port))
         instances.append(client_objet)
 
-# --- ICI ON APPELLE TA FONCTION ---
+#ici on appel la fonction 
 result.afficher_resultats(instances) 
-# ----------------------------------
 
 with open("config.json","w") as test:
     json.dump(list_parck, test, indent=4)

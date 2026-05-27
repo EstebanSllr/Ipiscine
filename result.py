@@ -1,4 +1,3 @@
-# result.py
 import calculat
 
 def afficher_resultats(instances): 
